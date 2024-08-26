@@ -1,0 +1,98 @@
+
+:root{
+    --div-width: 100px;
+    --div-height: 100px;
+    --div-background-color: slategrey;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: slategrey;
+
+}
+
+.box1 {
+    transition-property: all;
+    transition-duration:  500ms;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+}
+
+.box2 {
+    transition-property: background-color;
+    transition-duration:  800ms;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+}
+
+.box3 {
+    transition-property: all;
+    transition-duration:  1s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+}
+
+.box4 {
+    transition-property: all;
+    transition-duration:  200ms;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+}
+
+.box5 {
+    transition-property: all;
+    transition-duration:  500ms;
+    transition-delay: 500ms;
+    transition-timing-function: ease;
+}
+
+.box6 {
+    transition-property: all;
+    transition-duration:  500ms;
+    transition-delay: 100ms;
+    transition-timing-function: ease;
+}
+
+.box7 {
+    transition-property: all;
+    transition-duration:  500ms;
+    transition-delay: 100ms;
+    transition-timing-function: ease;
+}
+
+.box8 {
+    transition-property: all;
+    transition-duration:  500ms;
+    transition-delay: 100ms;
+    transition-timing-function: steps(6, end);
+}
+
+.box9 {
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+div:hover {
+    width: 300px;
+    background-color: lightcoral;
+}
+
