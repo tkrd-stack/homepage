@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css -->
+
+    <title>tkrd Playground</title>
+  </head>
+  <body
+    class="p-3 m-0 border-0 bd-example m-0 border-0 bd-example-row bd-example-row-flex-cols"
+  >
+    <!-- 共通ヘッダー -->
+    <header>
+      <nav class="navbar navbar-expand-xl bg-body-tertiary">
+        <div class="container-fluid">
+          <a href="./index.html" class="navbar-brand">tkrd Playground</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a href="./index.html" class="nav-link active">HOME</a>
+              <a href="#" class="nav-link">WORKS</a>
+              <a href="#" class="nav-link">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- 共通ヘッダー -->
+    <div class="container-fluid">
+      <h2 class="text-bg-secondary">container</h2>
+      <div class="container bg-body-secondary">container</div>
+      <div class="container-fluid bg-body-secondary">container-fluid</div>
+      <div class="container-sm bg-body-secondary">container-sm</div>
+      <div class="container-md bg-body-secondary">container-md</div>
+      <div class="container-lg bg-body-secondary">container-lg</div>
+      <div class="container-xl bg-body-secondary">container-xl</div>
+      <div class="container-xxl bg-body-secondary">container-xxl</div>
+    </div>
+    <div class="container-fluid">
+      <h2 class="text-bg-secondary">grid</h2>
+      <div class="container bg-body-tertiary">
+        <h3 class="bg-body-tertiary">column</h3>
+        <div class="row">
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+        <div class="row">
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+        <div class="row">
+          <div class="col">col</div>
+          <div class="col-3">col</div>
+          <div class="col">col</div>
+        </div>
+        <div class="row text-center">
+          <div class="col">col</div>
+          <div class="col-sm-auto">col</div>
+          <div class="col">col</div>
+        </div>
+        <div class="row">
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+        <div class="row bg-body-secondary">
+          <div class="col-8">col</div>
+          <div class="col-4">col</div>
+        </div>
+        <div class="row bg-body-secondary">
+          <div class="col-8">col</div>
+          <div class="col-4">col</div>
+        </div>
+        <div class="row bg-body-secondary">
+          <div class="col-sm">col</div>
+          <div class="col-sm">col</div>
+          <div class="col-sm">col</div>
+        </div>
+      </div>
+      <div class="container bg-body-tertiary">
+        <h3 class="bg-body-tertiary">row</h3>
+        <div class="row row-cols-2">
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+          <div class="col">col</div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-3">Level 1: .col-sm-3</div>
+          <div class="col-sm-9">
+            <div class="row">
+              <div class="col-8 col-sm-6">Level 2: .col-8 .col-sm-6</div>
+              <div class="col-4 col-sm-6">Level 2: .col-4 .col-sm-6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <h2 class="text-bg-secondary">Column</h2>
+        <div class="container text-center">
+          <div
+            class="row align-items-start bg-body-secondary"
+            style="height: 100px"
+          >
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+          </div>
+          <div
+            class="row align-items-center bg-body-secondary"
+            style="height: 100px"
+          >
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+          </div>
+          <div
+            class="row align-items-end bg-body-secondary"
+            style="height: 100px"
+          >
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header id="header">
+      <h2 class="h2 container-fluid text-center bg-secondary">navgation bar</h2>
+      <div>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">text Navbar</a>
+          </div>
+        </nav>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">heading Navbar</span>
+          </div>
+        </nav>
+        <nav class="navbar text-body-tertiary">
+          <div class="container-fluid">
+            <img
+              src="./img/onigiri_logo.svg"
+              width="100"
+              height="100"
+              class="d-inline-block align-text-top"
+              alt="onigiri_logo"
+            />
+          </div>
+        </nav>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand h2">
+              <img
+                src="./img/onigiri_logo.svg"
+                width="100"
+                height="100"
+                alt="onigiri_logo"
+              />logo + text NavBar
+            </a>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar (list base)</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar (only a tag)</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a href="#" class="nav-link active">HOME</a>
+                <a href="#" class="nav-link">FEATURES</a>
+                <a href="#" class="nav-link">PRICING</a>
+                <a href="#" class="nav-link disabled">DISABLED</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar (add dropdown)</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown Link
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Action</a></li>
+                    <li>
+                      <a href="#" class="dropdown-item">Another Action</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Something else here</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">search navbar</a>
+            <form action="" class="d-flex" role="search">
+              <input
+                type="search"
+                class="form-control me-2"
+                aria-label="Search"
+                placeholder="search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+        <nav class="navbar bg-body-tertiary">
+          <form action="" class="container-fluid">
+            <div class="input-group">
+              <span class="input-group-text">@</span>
+              <input
+                type="button"
+                value=""
+                class="form-control"
+                placeholder="input username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">email:</span>
+              <input type="email" class="form-check-inline" name="" id="" />
+            </div>
+          </form>
+        </nav>
+        <nav class="navbar bg-body-tertiary">
+          <form action="" class="container-fluid justify-content-start">
+            <button type="button" class="btn btn-lg btn-outline-success me-2">
+              large button
+            </button>
+            <button type="button" class="btn btn-outline-success me-2">
+              main button
+            </button>
+            <button class="btn btn-sm btn-outline-secondary">smaller</button>
+          </form>
+        </nav>
+        <nav
+          class="navbar bg-dark border-bottom border-bottom-dark"
+          databs-theme="dark"
+        >
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1" style="color: #e3f2fd"
+              >heading Navbar</span
+            >
+          </div>
+        </nav>
+        <nav class="navbar bg-primary" data-bs-theme="dark">
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">heading Navbar</span>
+          </div>
+        </nav>
+
+        <nav class="navbar" style="background-color: #e3f2fd">
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">heading Navbar</span>
+          </div>
+        </nav>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">default</a>
+          </div>
+        </nav>
+        <!-- <nav class="navbar fixed-top bg-body-tertiary">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">fixed top</a>
+          </div>
+        </nav> -->
+        <!-- <nav class="navbar fixed-bottom bg-body-tertiary">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">fixed bottom</a>
+          </div>
+        </nav> -->
+        <nav class="navbar sticky-top bg-body-tertiary">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">sticky top</a>
+          </div>
+        </nav>
+        <nav class="navbar sticky-bottom bg-body-tertiary">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">sticky bottom</a>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul
+                class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                style="--bs-scroll-height: 100px"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Link
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Link</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar navbar-dark bg-dark fixed-bottom">
+          <div class="container-fluid">
+            <a href="#" class="navbar-brand">Offcanvas navbar</a>
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end text-bg-dark"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  OffsetCanvas
+                </h5>
+                <button
+                  class="btn-close btn-close-white"
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active">Contact</a>
+                  </li>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Action</a></li>
+                    <li>
+                      <a href="#" class="dropdown-item">Another Action</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Something else here</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item">Something else here</a>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="box"></div>
+    </header>
+  </body>
+</html>

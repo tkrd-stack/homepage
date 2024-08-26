@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+AR:wght@100..400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.875rem;
+    font-family: 'Edu AU VIC WA NT Hand';
+    background-color: rgb(172, 204, 249);
+}
+
+main {
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.contaier {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.inner {
+    max-width: 600px;
+    margin:0 auto;
+}
+#index_format {
+    background-color: white;
+}
+
+.contents {
+    display: flex;
+    align-items: flex-start;
+}
+
+#detail_format > img  {
+    float: left;
+}
+
+#detail_format .contents img {
+    width:50%;
+}
+
+.text {
+    margin: 10px;
+}
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    padding:16px 0;
+    margin: 25px;
+    border-top: solid 1px #dedede;
+    border-bottom: solid 1px #dedede;
+}
+
+dt {
+    width: 25%;
+}
+
+dd {
+    width: 65%;
+}
+
+@media screen and (max-width: 1024px) {
+    .contents {
+        flex-direction: column;
+    }
+    #detail_format .contents img {
+        width:100%;
+    }
+}
